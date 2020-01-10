@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="Css/style.css">
+    <script src="js/smart-alert.js"></script>
+</head>
+<body>
+    <div id="loginContainer" class="show">
+    <nav class="loginHeader">
+        <img src="images/logo.gif">
+    </nav>
+        <div class="login">
+           
+                    <fieldset class="loginField">
+                      <legend><p class="p1"> &nbsp; Ez Task Account </p></legend>
+                      <input id="name" class="un" type="text" name="un" placeholder="Username"><br>
+                      <input id="pass" class="up" type="password" name="up" placeholder="Password"><br>
+                     <button onclick="login()">Login</button>
+                    </fieldset>
+                  
+        </div>
+    <div class="footer">
+            <p>Copyright (c) 2012, KPSIAJ. All rights reserved.</p>
+    </div>
+    </div>
+
+    <div id="addContainer" class="hide">
+        <nav class="addHeader">
+            <img id="logo" src="images/logo.gif">
+            <span id="userName">&nbsp;-&nbsp;</span>
+            <span id="dateTime">Date Time</span>
+        </nav>
+        <fieldset class="addField">
+            <legend>
+                <p class="p2"> &nbsp; Save Your Work </p>
+            </legend>
+            <input type="text" id="dep" placeholder="Department name" required="required">
+            <input type="text" id="sub" placeholder="Task subject" required="required">
+            <br> <textarea id="det" placeholder="Task detail" required="required"></textarea>
+            <br>
+            <button onclick="addTask()">Submit</button>
+            <button id="cancleBtn" onclick="cancleB()">Cancle</button>
+
+        </fieldset>
+        <div id="footer">
+            <p>Created by Mr.Zaidi...</p>
+        </div>
+    </div>
+
+    <div id="viewContainer" class="hide">
+        <nav class="viewHeader">
+            <img id="logo" src="images/logo.gif"">
+            <span id="userName">&nbsp;-&nbsp;</span>
+            <span id="dateTime">Date Time</span>
+        </nav>
+        <fieldset class="viewField">
+            <legend>
+                <p class="p3"> &nbsp; My Work </p>
+            </legend>
+            <table id="table">
+                    <tr>
+                        <th class="sno">
+                            S.no
+                        </th>
+                        <th class="deph">
+                            Department
+                        </th>
+                        <th class="subh">
+                            Subject
+                        </th>
+                        <th class="deth">
+                            Details
+                        </th>
+                        <th class="edith">
+                            Edit
+                        </th>
+                        <th class="checkBox">
+                            selection
+                        </th>
+                    </tr>
+            </table>
+        </fieldset>
+        <div id="buttons">
+            <button onclick="changeClass()">Add New Task</button>
+            <button onclick="removeAll()">Remove All</button>
+            <button>Remove Selected</button>
+        </div>
+        <div id="footer">
+            <p>Created by Mr.Zaidi...</p>
+        </div>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+</html>
